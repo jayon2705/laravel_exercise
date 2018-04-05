@@ -1,0 +1,29 @@
+<html>
+<body>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Dashboard</div>
+
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+					
+					<select id="dynamic_select">
+					 <option value="USD" selected="selected">USD</option>
+						<option value="EUR">EUR</option>
+					</select>
+                    You are logged in!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+

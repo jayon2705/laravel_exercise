@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'DefaultController@index')->name('home');
+
+
+Route::get('/EUR','currencyController@index')->name('EUR');
+
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
